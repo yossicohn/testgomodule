@@ -2,12 +2,17 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"github.com/yossicohn/testgomodule/quarrystruct"
 )
 
-func main(){
+func init() {
+	fmt.Println("init main module")
 
+	fmt.Println(quarrystruct.Version)
+}
 
+func main() {
 
+	fmt.Println("main function")
+	fmt.Println(quarrystruct.Version)
 }
